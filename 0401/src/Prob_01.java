@@ -13,7 +13,7 @@ public class Prob_01 {
 		me.science = scan.nextInt();
 		me.english = scan.nextInt();
 		
-		System.out.println("∆Ú±’¿∫ "+me.average());  
+		System.out.println("∆Ú±’¿∫ asdf"+me.average());  
 		
 		
 	

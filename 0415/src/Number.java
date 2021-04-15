@@ -3,33 +3,37 @@ import java.util.Scanner;
 public class Number {
 
 	public static void main(String[] args) {
+		
+		
 		// TODO Auto-generated method stub
+		//ì„ ì–¸ë¶€
 		Scanner scan = new Scanner(System.in);
 		int[] random = new int[10];
 		boolean b=false;
 		
 		
-		System.out.println("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö)");
-		int a=scan.nextInt();
+		System.out.println("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€)");
+		int a=scan.nextInt(); //ìŠ¤ìºë„ˆë¡œ ì…ë ¥ë°›ê¸°
 		
-		for(int i=0;i<10;i++) {
+		for(int i=0;i<10;i++) { //ë°°ì—´ì— mathí•¨ìˆ˜ë¡œ ëœë¤ê°’ ë„£ê¸°
 			random[i] = (int)(Math.random()*50)+1;
-}
+		}
 		
 		
-		for(int i=0;i<10;i++) {
-			
+		for(int i=0;i<10;i++) {	 //ë°°ì—´ ì¶œë ¥ê³¼ ì…ë ¥ê°’ê³¼ ì¼ì¹˜í•˜ëŠ”ì§€ ì¡°ê±´ë¬¸ìœ¼ë¡œ í™•ì¸
 			System.out.print(random[i]+" ");
 			if(random[i]==a) {
 				b=true;
 			}
 		}
+		
+		//ì¶œë ¥ë¶€
 		System.out.println();
 		if(b==true) {
-			System.out.println("´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("ë‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤.");
 		}                        
 		else 
-			System.out.println("²Î! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ê½! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ì—†ìŠµë‹ˆë‹¤.");
 	}
 		
 
